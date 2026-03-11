@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Prompt Box Example</title>
+</head>
+
+<body>
+
+<h2>JavaScript Prompt Box</h2>
+
+<button onclick="askName()">Click to Enter Name</button>
+
+<p id="result"></p>
+
+<script>
+function askName() {
+  let name = prompt("Please enter your name:");
+
+  if (name != null) {
+    document.getElementById("result").innerHTML =
+    "Hello, " + name + "! Welcome to the website.";
+  }
+}
+</script>
+
+</body>
+</html>
