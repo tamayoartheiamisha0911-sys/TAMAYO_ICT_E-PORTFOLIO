@@ -1,0 +1,127 @@
+
+/* FLEXBOX CARD */
+.card{
+  display:flex;
+  align-items:center;
+  gap:40px;
+  width:900px;
+  margin: 15px auto;
+  background:#F3EBD8;
+  padding:25px;
+  border-radius:12px;
+  box-shadow:0 6px 15px rgba(0,0,0,0.2);
+}
+
+/* PHOTO AREA */
+.photo-stack{
+  position:relative;
+  width:260px;
+  height:220px;
+}
+
+/* PHOTOS */
+.photo{
+  position:absolute;
+  width:200px;
+  height:150px;
+  object-fit:cover;
+  border-radius:5px;
+  cursor:pointer;
+  transition:all 0.35s ease;
+  box-shadow:0 8px 15px rgba(0,0,0,0.3);
+  object-fit: contain;
+}
+
+/* top photo */
+.photo1{
+  top:10px;
+  left:0;
+  transform:rotate(-6deg);
+  z-index:2;
+}
+
+/* bottom photo */
+.photo2{
+  top:50px;
+  left:60px;
+  transform:rotate(6deg);
+  z-index:1;
+}
+
+/* hover effect */
+.photo:hover{
+  transform:scale(1.05) rotate(0deg);
+}
+
+/* TEXT */
+.text{
+  flex:1;
+  font-family:Corbel;
+  font-size:20px;
+  color:#44290C;
+}
+
+.sticker{
+  position: fixed;
+  width: 100px;
+  pointer-events: none;
+  animation: float 4s ease-in-out infinite;
+}
+
+
+.s1{
+  top: 2.15%;
+  left: 1%;
+} 
+
+.s2{
+  top:  2.15%;
+  right: -1.25%;
+  animation-delay: 1s;
+  width: 155px;
+}
+
+.s3{
+  bottom: 5%;
+  left: 1%;
+  animation-delay: 2s;
+}
+
+.s4{
+  top:45%;
+  right: 1%;
+  animation-delay: 3s;
+}
+
+.s5{
+  bottom: 1%;
+  right: 1%;
+  animation-delay: 1.5s;
+}
+
+/* Floating animation */
+
+@keyframes float{
+  0%{ transform: translateY(0); }
+  50%{ transform: translateY(-15px); }
+  100%{ transform: translateY(0); }
+}
+
+/* MOBILE */
+@media (max-width:650px){
+
+.card{
+  flex-direction:column;
+  width:90%;
+}
+
+.photo-stack{
+  margin-bottom:20px;
+}
+
+}
+
+.photo.zoomed {
+  transform: scale(1.8) rotate(0deg); /* bigger and straighten */
+  z-index: 10; /* on top */
+}
