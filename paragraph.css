@@ -1,0 +1,41 @@
+.bg {
+  background-color: #fff9f5;   
+  color: #e86975;             
+  border: 2px solid #ffcd86;   
+  border-radius: 12px;         
+  padding: 10px 15px;                
+  font-family: MV Boli;
+  text-align: center;
+  font-size:18px;
+  margin: 20px auto;
+  width: fit-content;            
+  margin: 20px auto;
+  }
+
+.title {
+  background-color: #efaab0;   
+  color: #be0822;              
+  border: 2px solid #fff9f5;   
+  border-radius: 10px;         
+  text-align:center;
+  padding: 10px 15px;          
+  font-size:30px;
+  font-family: Kristen ITC;                
+  margin: 20px auto;
+}
+
+.img {
+      border: 6px solid #be0822;   
+      border-radius: 12px;         
+      padding: 4px;                
+      width: 250px;                
+      display: block;
+      margin: 20px auto;       
+      transition: transform 0.3s ease;
+    }
+
+.img:hover {
+      transform: scale(1.05); 
+      box-shadow: 0 10px 20px rgba(255, 205, 134, 0.6); 
+      border-color: #e84684; 
+    }
